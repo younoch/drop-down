@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(34.jpg);
+    background-position: center;
+    
+    font: sans-serif;
+}
+.drop{
+    background-color: green;
+    text-align: center;
+}
+.drop ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.drop ul li{
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+}
+.drop ul li a{
+    text-decoration: none;
+    color: white;
+}
+.act, .drop ul li:hover{
+    background-color: yellowgreen;
+    border-radius: 3px;
+}
+/*About Sub Manu-1 Strat*/
+.about-sub{
+    display: none;
+}
+.drop ul li:hover .about-sub{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin: 15px 0px -15px 0px;
+}
+.drop ul li:hover .about-sub ul{
+    display: block;
+}
+.drop ul li:hover .about-sub ul li{
+    width: 140px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.drop ul li:hover .about-sub ul li:last-child{
+    border-bottom: none;
+}
+.drop ul li:hover .about-sub ul li a:hover{
+    color:#62FFB2;
+}
+/*Sub Manu-2 Start*/
+.fa-angle-right{
+    float: right;
+}
+.sub-manu-2{
+    display: none;
+}
+.hover-it:hover .sub-manu-2{
+    position: absolute;
+    display: block;
+    margin: -40px 0px 0px 140px;
+    background-color: green;
+}
